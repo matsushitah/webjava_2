@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ペットショップ</title>
+</head>
+<body>
+	<form action="#" th:action="@{/myHome}" th:object="${mainForm}" method="post">
+	<h1>ペットショップへようこそ</h1>
+	<p>飼う動物を選んでください。</p>
+	<input type="submit" name="animal" value="犬" />
+	<input type="submit" name="animal" value="猫" />
+	</form>
+	<br>
+	<span class="message" th:text="${message}"></span>
+</body>
+</html>
